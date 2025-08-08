@@ -10,7 +10,7 @@ This directory contains example code for retrieving secrets for an Amazon ECS ta
 
 ## Modules
 
-YYou can reuse some of the local modules in the `modules/` directory for your own ECS task definition.
+You can reuse some of the local modules in the `modules/` directory for your own ECS task definition.
 
 - `vault-mount`: sets up the EFS file system and mount targets
 - `vault-task/iam`: sets up the task IAM role that Vault will use in its AWS IAM auth method
