@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: devwebapp
+  labels:
+    app: devwebapp
+spec:
+  serviceAccountName: vault-auth
+  containers:
+    - name: devwebapp
+      image: burtlo/devwebapp-ruby:k8s
+      env:
+        - name: VAULT_ADDR
+          value: "http://192.168.65.254:8200"

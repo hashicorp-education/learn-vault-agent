@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+# Copyright IBM Corp. 2018, 2026
 # SPDX-License-Identifier: MPL-2.0
 
 export VAULT_ADDR=$(cd infrastructure && terraform output -raw hcp_vault_public_endpoint)
